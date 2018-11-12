@@ -49,7 +49,7 @@ stream.keyBy(...).process(new MyProcessFunction())
 
 ## 低层的连接(Low-level Joins)
 
-为了在两个输入源实现低层次的操作，应用可以使用 `CoProcessFunction`。该函数绑定了连个不同的输入源并且会对从两个输入源中得到的记录分别调用 `processElement1(...)` 和 `processElement2(...)` 方法。
+为了在两个输入源实现低层次的操作，应用可以使用 `CoProcessFunction`。该函数绑定了两个不同的输入源并且会对从两个输入源中得到的记录分别调用 `processElement1(...)` 和 `processElement2(...)` 方法。
 
 可以按下面的步骤来实现一个低层典型的连接操作：
 
